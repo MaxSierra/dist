@@ -10,13 +10,18 @@
 
     <title>deCIR UADY</title>
 
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/justified-nav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style_list.css" />
-    <link href="style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -39,6 +44,12 @@
     return $url;
   } 
 ?>
+
+  <script>
+  $(function() {
+  $( "#accordion" ).accordion();
+  });
+  </script>
 
   </head>
 
@@ -127,19 +138,48 @@
           <!--<p class="text-danger">As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>-->
           <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
           <!--<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>-->
-          <section class="main clearfix">
-      
-        <div class="fleft">
-          <select id="cd-dropdown" class="cd-select">
-            <option value="-1" selected>Choose a network to add</option>
-            <option value="1" class="icon-google-plus">Google Plus</option>
-            <option value="2" class="icon-facebook">Facebook</option>
-            <option value="3" class="icon-twitter">Twitter</option>
-            <option value="4" class="icon-github">GitHub</option>
-          </select>
+          
+
+
+          <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Group 1</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">Texto 1</div>
+          </div>
         </div>
-      </section>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Group 2</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Texto 2</div>
+          </div>
         </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Group 3</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Texto 3</div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+
+
+        </div>
+
         <div class="col-lg-8">
         	 <div class="jumbotron" id="caja">
 	          	<!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
