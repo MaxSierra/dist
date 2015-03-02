@@ -1,0 +1,13 @@
+#c2{
+	background-color: #FFF;
+	height: 100px;
+	width: 100px;
+	padding: 10px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right: 0px;
+	behavior:url(border.htc);	
+}

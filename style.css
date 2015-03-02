@@ -1,0 +1,123 @@
+#caja {
+background-color: #FFF;
+height: 300px;
+width: 740px;
+padding: 50px;
+/*para Firefox*/
+-moz-border-radius: 15px 15px 15px 15px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 15px 15px 15px 15px;
+/* para Opera */
+border-radius: 15px 15px 15px 15px;
+margin-top: 50px;
+margin-left: 10px;
+behavior:url(border.htc);
+}
+
+#lateral{
+background-color: #FFF;
+border-radius: 15px 15px 15px 15px;
+height: 530px;
+width: 180px;
+padding: 10px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+margin-top: 50px;
+margin-left: 15px;
+behavior:url(border.htc);
+}
+
+#c1{
+	background-color: #FFF;
+	height: 200px;
+	width: 445px;
+	padding: 10px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 0px;
+	margin-left: 10px;
+	behavior:url(border.htc);
+}
+
+#c2{
+	background-color: #FFF;
+	height: 200px;
+	width: 270px;
+	padding: 10px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right: 0px;
+	behavior:url(border.htc);
+}
+
+.col-lg-2 img{
+	margin-top: -10px;
+	margin-bottom: 13px;
+}
+
+#texto{
+	color: #FFF;
+	text-align: center;
+}
+
+/* sub menu*/
+#submenu{
+	display:block;
+}
+
+.submenu ul{
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	position: absolute;
+	top: 43px;
+	left: 0px;
+	background: #ffffff;
+}
+
+.submenu li:hover > ul{
+ 	display: block;
+ 	background-color: #fff;
+}
+
+.submenu ul li {
+	display:block;
+	float: none;
+	background:none;
+	margin:0;
+	padding:0;
+}
+
+.submenu ul li a {
+	font-size:12px;
+	font-weight:normal;
+	display:block;
+	color:#797979;
+	border-left:3px solid #1608E2;
+	background:#0A6B05;
+}
+
+.submenu ul li a:hover, .submenu ul li:hover > a{
+	background:#f0f0f0;
+	border-left:3px solid #9CA3DA;
+	color:#797979;
+}
+
+.navbar-inverse{
+	background-color: #AB8A31;
+	/*para Firefox*/
+	-moz-border-radius: 5px 5px 5px 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px 5px 5px 5px;
+	/* para Opera */
+	border-radius: 5px 5px 5px 5px;
+}
+
+/*.navbar-inverse{
+	background-color: #BF942B;
+}*/
