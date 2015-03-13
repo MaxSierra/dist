@@ -83,7 +83,11 @@
         ?>
 
         <?php 
-            include "central_column.php";
+            if(!isset($_GET['ninos'])){
+              include "central_column.php";
+            }else{
+              echo "pongo aqui el slider de niños<br/>";
+            }
         ?>
         <div class="col-lg-2">
           <!-- <h2></h2>-->
